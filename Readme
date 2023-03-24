@@ -1,0 +1,46 @@
+#BriBrimming Grace Private Limited  TEST 
+
+In this application I perform resgiter and login with JWT token and custom user model.
+Also, I perorm CURD opreations in Employee.
+
+##Here is some steps to run this project.
+
+First you have to install  the requirements.txt file
+pip install -r requirements.txt
+
+Now, you have to run makemigration and migrate command for the database.
+
+python manage.py makemigrations
+python manage.py migrate
+
+Now, you are good to go to run the project
+
+python manage.py runsever
+
+
+###here is some snapshot of the register and login opreations
+
+Register the User
+image.png
+
+Login the user
+image.png
+
+--------------------------------------------------------
+
+###CURD opreations of employee
+
+Add employee
+image.png
+
+Get the employee
+image.png
+
+Get the employee by id
+image.png
+
+Update the employee
+image.png
+
+Delete the employee
+image.png

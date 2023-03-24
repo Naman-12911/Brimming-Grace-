@@ -102,7 +102,9 @@ sending the request to this url to get output http://localhost:8000/employee/emp
 ]
 
 Get the employee by id
-sending the request to this url to get output http://localhost:8000/employee/employe/2
+sending the request to this url to get the output http://localhost:8000/employee/employe/2
+
+output
 {
     "id": 2,
     "email": "namangarg12@gmail.com",
@@ -112,8 +114,31 @@ sending the request to this url to get output http://localhost:8000/employee/emp
     "phone": 8860544678
 }
 
+
 Update the employee
-sending json request to this url http://localhost:8000/employee/employe/2
+sending the json data to this url http://localhost:8000/employee/employe/2
+{
+    "name": "naman garg",
+    "phone": 8860544678,
+    "employe_id": 1223,
+    "email":"namangarg11@gmail.com"
+}
+output
+{
+    "message": "employee Updated Successfully",
+    "data": {
+        "id": 2,
+        "email": "namangarg11@gmail.com",
+        "name": "naman garg",
+        "employe_id": 1223,
+        "date": "2023-03-24",
+        "phone": 8860544678
+    }
+}
 
 Delete the employee
-image.png
+sending the request to this url http://localhost:8000/employee/employe/2
+output
+{
+    "message": "employee Deleted Successfully"
+}

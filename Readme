@@ -3,7 +3,7 @@
 In this application I perform resgiter and login with JWT token and custom user model.
 Also, I perorm CURD opreations in Employee.
 
-##Here is some steps to run this project.
+# Here is some steps to run this project.
 
 First you have to install  the requirements.txt file
 pip install -r requirements.txt

@@ -18,23 +18,70 @@ Now, you are good to go to run the project
 python manage.py runsever
 
 
-###here is some snapshot of the register and login opreations
+### here is some snapshot of the register and login opreations
 
 Register the User
-image.png
 
+sending the json data at this url http://localhost:8000/account/register/
+{
+    "email":"namangarg15@gmail.com",
+    "password":"naman12911",
+    "name":"naman",
+    "phone_no": 8860593678,
+    "address":"a-15",
+    "state": "delhi",
+    "country":"india"
+}
+output
+{
+    "id": 6,
+    "name": "naman",
+    "phone_no": "8860593678",
+    "email": "namangarg15@gmail.com",
+    "address": "a-15",
+    "state": "delhi",
+    "country": "india"
+}
 Login the user
-image.png
-
+sending this json data with this url http://localhost:8000/account/login/
+ {
+    "email":"namangarg1@gmail.com",
+    "password":"naman12911"
+ }
+{
+    "email": "namangarg1@gmail.com",
+    "tokens": {
+        "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTczODYzMCwiaWF0IjoxNjc5NjUyMjMwLCJqdGkiOiIzMGEwY2Y1YmQwZWY0ZmIxOGMyNzhlNzAxMTMyYzQzMiIsInVzZXJfaWQiOjR9.SG4dInlysGE6cTnE2pxvf7v7qnYZpl9yx_T2atHlkEA",
+        "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NjUyNTMwLCJpYXQiOjE2Nzk2NTIyMzAsImp0aSI6ImZkMjA2NWY1MzhmYzQzZTRiMzBhNjUwMjFhZjJmYjMzIiwidXNlcl9pZCI6NH0.Av2aLeNzcrdo-DpstZ5i0Rm8Trqo5yYmwNl4nwo0nK0"
+    }
+}
 --------------------------------------------------------
 
 ###CURD opreations of employee
 
-Add employee
-image.png
+Add employee 
+sending the json data with this url http://localhost:8000/employee/employe
+{
+    "name": "naman garg",
+    "phone": 8860574678,
+    "employe_id": 1203,
+    "email":"namangag12@gmail.com"
+}
+output
+{
+    "message": "employee Created Successfully",
+    "data": {
+        "id": 3,
+        "email": "namangag12@gmail.com",
+        "name": "naman garg",
+        "employe_id": 1203,
+        "date": "2023-03-24",
+        "phone": 8860574678
+    }
+}
 
 Get the employee
-image.png
+sending the request to this url to get output http://localhost:8000/employee/employe
 
 Get the employee by id
 image.png

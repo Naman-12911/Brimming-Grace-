@@ -82,12 +82,38 @@ output
 
 Get the employee
 sending the request to this url to get output http://localhost:8000/employee/employe
+[
+    {
+        "id": 2,
+        "email": "namangarg12@gmail.com",
+        "name": "naman garg",
+        "employe_id": 1223,
+        "date": "2023-03-24",
+        "phone": 8860544678
+    },
+    {
+        "id": 3,
+        "email": "namangag12@gmail.com",
+        "name": "naman garg",
+        "employe_id": 1203,
+        "date": "2023-03-24",
+        "phone": 8860574678
+    }
+]
 
 Get the employee by id
-image.png
+sending the request to this url to get output http://localhost:8000/employee/employe/2
+{
+    "id": 2,
+    "email": "namangarg12@gmail.com",
+    "name": "naman garg",
+    "employe_id": 1223,
+    "date": "2023-03-24",
+    "phone": 8860544678
+}
 
 Update the employee
-image.png
+sending json request to this url http://localhost:8000/employee/employe/2
 
 Delete the employee
 image.png
